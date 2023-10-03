@@ -5,7 +5,7 @@ This is a program that uses a type of graph to model an anthill and find the sho
 Created as an interview problem to optimize an anthill.        
 [click here to view code](https://github.com/carlgombert/Anthill_Optimization/tree/main/anthill_optimization/src/com/anthill_optimization/main)
 
-## Shortest path
+## shortest path
 The node data structure in the program has a built in method to find the shortest path between nodes given the root starting node and the ID of the target node.    
     
 Below is the model I am using for the anthill however the model doesn't have to look like this nor does it have to be an anthill.
