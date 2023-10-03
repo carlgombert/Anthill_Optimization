@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class Main {
 	
+	/** 
+    * This is the main method which creates a graph of nodes and connects them to model
+    * an ant hill. 
+    * @param args Unused 
+    * @return None 
+    */
 	public static void main(String[] args) {
 		Node node1  = new Node(1);
 		Node node2  = new Node(2);
@@ -117,7 +123,7 @@ public class Main {
 		node10.connectNode(node11);
 		node11.connectNode(node3);
 		node9.connectNode(node20);
-		//node20.connectNode(node19);
+		node20.connectNode(node19);
 		node19.connectNode(node18);
 		node18.connectNode(node17);
 		node42.connectNode(node43);
@@ -139,9 +145,16 @@ public class Main {
 		node8.connectNode(node9);
 		node2.connectNode(node3);
 		
-		shortestPath(node2, 19);
+		shortestPath(node14, 30);
 	}
 	
+	/** 
+	* This method is uses the search method in the Node class to get the shortest 
+	* path between two nodes and displays the path to the console.
+	* @param node This is the root node where the search begins from
+	* @param targetID This is the the ID of the target node 
+	* @return None
+	*/
 	public static void shortestPath(Node node, int targetID) {
 		ArrayList<Node> path = node.search(new ArrayList<Node>(), targetID);
 		for(Node i : path) {
