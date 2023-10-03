@@ -13,6 +13,6 @@ Below is the model I am using for the anthill however the model doesn't have to 
 If I wanted to find the shortest path from node 15 to node 41 I would write "shortestPath(node15, 41);" and the console would output:    
 ![This is an image](https://github.com/carlgombert/Anthill_Optimization/blob/main/screenshots/15_to_41_output.png)        
 meaning start at node 15, travel to node 16, travel to node 17 ... travel to node 41.        
-This shortest path algorithm assumes that all nodes on this model are an equal distance from each other.        
+This shortest path algorithm assumes that all nodes on this model are an equal distance from each other and will only return one path if multiple are the same distance.        
 Visualized on the model, the consoles output from Node 15 to 41 would look like:        
 ![This is an image](https://github.com/carlgombert/Anthill_Optimization/blob/main/screenshots/shortest_path_15_to_41.png) 
